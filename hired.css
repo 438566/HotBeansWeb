@@ -1,0 +1,169 @@
+/* Global Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+:root {
+    --ubuntu-font: 'Ubuntu', sans-serif;
+}
+
+/* Navigation Bar (Heading) */
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(98, 0, 255);
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid black;
+}
+
+/* First Section of the Navigation Bar */
+
+.logo {
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-family: var(--ubuntu-font);
+}
+
+/* Navigation Bar - Second Section of the Navigation Bar */
+
+.firstPos {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.secPos {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Buttons */
+
+.navBut {
+    width: 150px;
+    height: 75px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.home, .trainees, .company, .application, .courses {
+    background-image: linear-gradient(rgb(98, 0, 255), black);
+}
+
+.home:hover, .trainees:hover, .company:hover, .application:hover, .courses:hover {
+    background-position-y: -100px;
+    transition: 0.5s;
+    color: black;
+}
+
+.hired {
+    background-image: linear-gradient(black, rgb(98, 0, 255));
+}
+
+.hired:hover {
+    background-position-y: 100px;
+    transition: 0.5s;
+    color: black;
+}
+
+/* Section - Background Image */
+
+main {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundImg {
+    position: absolute;
+    z-index: -1;
+}
+
+.job-spec {
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+}
+
+.job-spec-desc {
+    width: 75ch;
+    font-size: 1.5rem;
+    font-family: var(--ubuntu-font);
+}
+
+.appButton {
+    padding: 10px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px black;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.appButton:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}

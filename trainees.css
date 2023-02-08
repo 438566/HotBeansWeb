@@ -1,0 +1,162 @@
+/* Global Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar (Heading) */
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(98, 0, 255);
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid black;
+}
+
+/* First Section of the Navigation Bar */
+
+.logo {
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+/* Navigation Bar - Second Section of the Navigation Bar */
+
+.firstPos {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secPos {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Buttons */
+
+.navBut {
+    width: 150px;
+    height: 75px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.home, .company, .hired, .application, .courses {
+    background-image: linear-gradient(rgb(98, 0, 255), black);
+}
+
+.home:hover, .company:hover, .hired:hover, .application:hover, .courses:hover {
+    background-position-y: -100px;
+    transition: 0.5s;
+    color: black;
+}
+
+.trainees {
+    background-image: linear-gradient(black, rgb(98, 0, 255));
+}
+
+.trainees:hover {
+    background-position-y: 100px;
+    transition: 0.5s;
+    color: black;
+}
+
+/* Section - Background Image */
+
+main {
+    width: 100%;
+    height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 1200px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.backgroundImg {
+    position: absolute;
+    z-index: -1;
+}
+
+.trainee-picture {
+    width: 110px;
+    height: 100px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.trainee-picture:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.trainee {
+    display: flex;
+    gap: 50px;
+}
+
+.trainee:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.desc {
+    width: 50ch;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+

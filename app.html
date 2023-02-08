@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans Web - Application</title>
+    <link href="app.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="firstPos">
+                <img class="logo" src="Logo.png" width="109.55px" height="81.25px">
+                <span class="title">Hot Beans Web</span>  
+            </section>
+            <section class="secPos">
+                <a href="index.html"><button class="navBut home">Home</button></a>
+                <a href="company.html"><button class="navBut company">Company Profile</button></a>
+                <a href="trainees.html"><button class="navBut trainees">Trainees</button></a>
+                <a href="hired.html"><button class="navBut hired">Get Hired</button></a>
+                <a href="app.html"><button class="navBut application">Application</button></a>
+                <a href="courses.html"><button class="navBut courses">Courses</button></a>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <img class="backgroundImg" src="iconifiedBackground.png">
+        <section class="app-form">
+            <form id="form" action="thankyou.html">
+                <table class="table basicInfo">
+                    <tr class="title-form">
+                        <th class="application-form">
+                            <label class="application-form">Application Form</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label class="title basic">Basic information</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="forename" class="input forename" type="text" placeholder="Your Forename" name="Forename">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="surname" class="input surname" type="text" placeholder="Your Surname" name="Surname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="postcode" class="input postcode" type="text" placeholder="Your Post Code" name="Post Code">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="phone" class="input phone" type="tel" placeholder="Your Phone Number" name="Phone Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="email" class="input email" type="email" placeholder="Your Email" name="Email">
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="table educHistory">
+                    <tr>
+                        <th>
+                            <label class="title education">Education History</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="helpInfo">
+                                The mostly preferred education information we're looking towards hearing is the University /
+                                College you went to
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="education-field" type="text" class="textField"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="table qualifications">
+                    <tr>
+                        <th>
+                            <label class="title qualif">Qualifications</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="helpInfo">
+                                In which coding languages do you have experience in? (Also list general qualifications, such as
+                                if you work well in a team etc.
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="qualifications" type="text" class="textField"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table class="table additionalInfo">
+                    <tr>
+                        <th>
+                            <label class="title additional">Additional information</label>
+                        </th>
+                    </tr>
+                    <tr> 
+                        <td>
+                            <span class="helpInfo">
+                                Additional information that you would like us to know: (E.g. What are your target achievements
+                                etc.)
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="additional-info" type="text" class="textField"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input id="submit" class="submit" type="submit" value="Submit Form"></input>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span>Copyright &copy; 2023 by Zsolt Rubinszki</span>
+    </footer>
+    <script src="appForm.js"></script>
+</body>
+</html>
