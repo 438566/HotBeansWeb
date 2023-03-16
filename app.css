@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -110,8 +111,10 @@ main {
 
 .backgroundImg {
     position: absolute;
+    width: 100%;
+    height: 100%;
     z-index: -1;
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 /* Application Form */
@@ -233,4 +236,6 @@ footer {
     align-items: center;
     background-color: rgb(41, 41, 41);
     color: white;
+    position: absolute;
+    bottom: -950px;
 }
