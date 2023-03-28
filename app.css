@@ -239,3 +239,36 @@ footer {
     position: absolute;
     bottom: -950px;
 }
+
+@media all and (max-width:1669px) {
+    .navBut {
+        width: 125px;
+        height: 70px;
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width:1400px) {
+    .navBut {
+        width: 100px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (max-width:500px) {
+    .navImg {
+        cursor: pointer;
+        transition: 0.5s;
+        border: 5px solid black;
+    }
+    .active {
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .navBut {
+        width: 50px;
+        height: 25px;
+        font-size: 0.5rem;
+    }
+}

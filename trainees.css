@@ -161,3 +161,39 @@ footer {
     color: white;
 }
 
+@media all and (max-width:1669px) {
+    .navBut {
+        width: 125px;
+        height: 70px;
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width:1400px) {
+    .navBut {
+        width: 100px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+
+    .desc {
+        width: 25ch;
+    }
+
+    .mainContent {
+        display: grid;
+        grid-template-columns: 800px;
+    }
+}
+
+@media all and (max-width:500px) {
+    .navBut {
+        width: 50px;
+        height: 25px;
+        font-size: 0.5rem;
+    }
+    .mainContent {
+        display: grid;
+        grid-template-columns: 400px;
+    }
+}
